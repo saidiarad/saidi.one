@@ -1,0 +1,120 @@
+/* Tailwind */
+/* ./src/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hamburger Icon Bar Styles */
+/* Default styles for the individual bars of the hamburger icon */
+
+/* Menu Icon Link Styling */
+/* Styles for the anchor tag (#menu-icon) that wraps the hamburger icon */
+
+#menu-icon {
+  display: inline-block;
+  /* Make the anchor behave like a block element */
+  padding: 10px;
+  /* Add padding around the icon */
+}
+/* Ensure the menu icon is visible when the sidebar is open */
+#menu-icon.close {
+  z-index: 1000; /* Ensure it is above the sidebar */
+  position: absolute; /* Fix it in the viewport */
+  right: 40px; /* Adjust as needed */
+  top: 40px;
+}
+
+/* Styles for the individual bars within the menu icon */
+
+#menu-icon .bar {
+  margin: 3px;
+  /* Space between the bars */
+  width: 25px;
+  /* Width of the bars */
+  height: 3px;
+  /* Height of the bars */
+  background: #000;
+  /* Black background color */
+  border-radius: 1.5px;
+  /* Slightly rounded corners for the bars */
+  /* Add transitions for smooth animation of margin and transform */
+  /* Vendor prefixes for older browsers (likely unnecessary now) */
+  transition: margin 0.2s, transform 0.2s;
+}
+/* Styles for the white menu icon inside the sidebar */
+#menu-icon.close .bar {
+  background: #fff; /* Change to white when in the close state */
+}
+
+/* Change spacing between the menu icon bars on hover */
+
+#menu-icon:not(.close):hover .bar {
+  margin: 5px 3px;
+}
+
+/* Transformation styles for the menu icon when it's in the "close" state */
+
+#menu-icon.close .bar:first-child {
+  transform: translateY(6px) rotate(45deg);
+  /* Move the top bar down and rotate it */
+}
+
+#menu-icon.close .bar:nth-child(2) {
+  opacity: 0;
+  /* Hide the middle bar */
+}
+
+#menu-icon.close .bar:last-child {
+  transform: translateY(-6px) rotate(-45deg);
+  /* Move the bottom bar up and rotate it */
+}
+
+#navbar-logo.logo-black {
+  filter: invert(1);
+}
+
+/* Ensure the sidebar logo and menu icon are aligned */
+#sidebar-logo,
+#menu-icon {
+  margin: 0; /* Reset margins */
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
+
+.hover\:duration-300:hover {
+  transition-duration: 300ms;
+}
+
+.hover\:ease-in:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+/* Center align the sidebar links */
+#sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group:hover .group-hover\:opacity-15 {
+  opacity: 0.15;
+}
+
+#linksContainer {
+  text-align: center;
+}
+
+.sidebar-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+}

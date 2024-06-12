@@ -1,0 +1,6 @@
+<svg width="322" height="322" viewBox="0 0 322 322" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M298.438 159.254C298.438 83.349 236.905 21.8159 161 21.8159C85.0951 21.8159 23.562 83.349 23.562 159.254C23.562 235.159 85.0951 296.692 161 296.692" stroke="currentColor" stroke-width="40"/>
+<line x1="298.434" y1="159.254" x2="298.434" y2="300.184" stroke="currentColor" stroke-width="40"/>
+<path d="M161 245.43C204.522 245.43 239.803 210.148 239.803 166.626C239.803 123.104 204.522 87.823 161 87.823" stroke="currentColor" stroke-width="40"/>
+<line y1="-20" x2="108.483" y2="-20" transform="matrix(4.37114e-08 1 1 -4.37114e-08 161 67.824)" stroke="currentColor" stroke-width="40"/>
+</svg>
