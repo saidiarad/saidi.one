@@ -47,7 +47,6 @@
 }
 
 /* Change spacing between the menu icon bars on hover */
-
 #menu-icon:not(.close):hover .bar {
   margin: 5px 3px;
 }
